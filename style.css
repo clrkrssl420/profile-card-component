@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --clr-dark-cyan: hsl(185, 75%, 39%);
+  --clr-desaturated-blue: hsl(229, 23%, 23%);
+  --clr-grayish-blue: hsl(227, 10%, 46%);
+
+  --clr-neutral: 0, 0%, 59%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* General Style */
+
+body {
+  background-color: var(--clr-dark-cyan);
+  color: #000;
+  font-family: "Kumbh Sans", sans-serif;
+
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 48vw bottom 40vh, left 45vw top 44vh;
+
+  display: grid;
+  place-content: center;
+}
+
+/* Profile Card Style */
+
+.profile-card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  max-width: 420px;
+  margin: 1.5rem;
+}
+
+.profile-picture {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  margin-top: -52px;
+}
+
+.profile-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--clr-desaturated-blue);
+  margin: 1rem 0 0.5rem 0;
+}
+
+.age {
+  font-weight: 400;
+  color: var(--clr-grayish-blue);
+  margin-left: 0.5rem;
+}
+
+.address {
+  color: var(--clr-grayish-blue);
+  margin-bottom: 2rem;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2.5rem;
+  border-top: 2px solid hsla(var(--clr-neutral), 0.2);
+}
+
+.stat-counter {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--clr-desaturated-blue);
+}
+
+.stat-description {
+  font-size: 0.8rem;
+  color: var(--clr-grayish-blue);
+}
